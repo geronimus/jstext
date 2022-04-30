@@ -111,7 +111,7 @@ Otherwise, it returns the empty string value.
 
 ```javascript
 tail( "tail" );   // => "ail"
-tail( "🚕 🛵" );  // => "🛵"
+tail( "🚕 🛵" );  // => " 🛵"
 tail( "a" );      // => ""
 ```
 ---
