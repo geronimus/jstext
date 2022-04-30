@@ -81,9 +81,9 @@ Otherwise, it returns the empty string value.
 ### Examples
 
 ```javascript
-head( "head" );   // => "h"
-head( "🚕 🛵" );  // => "🚕"
-head( "" );       // => ""
+head( "head" ); // => "h"
+head( "🚕 🛵" ); // => "🚕"
+head( "" ); // => ""
 ```
 ---
 
@@ -110,9 +110,9 @@ Otherwise, it returns the empty string value.
 ### Examples
 
 ```javascript
-tail( "tail" );   // => "ail"
-tail( "🚕 🛵" );  // => " 🛵"
-tail( "a" );      // => ""
+tail( "tail" ); // => "ail"
+tail( "🚕 🛵" ); // => " 🛵"
+tail( "a" ); // => ""
 ```
 ---
 
