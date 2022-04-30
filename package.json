@@ -1,0 +1,35 @@
+{
+  "name": "@geronimus/text",
+  "version": "0.1.0",
+  "description": "Utility functions to help with text values.",
+  "main": "src/text.js",
+  "type": "module",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "lint": "eslint src test",
+    "test": "mocha --recursive"
+  },
+  "keywords": [
+    "text"
+  ],
+  "author": "Geronimus (Graham Brown)",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "@geronimus/type-err": "^0.1.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "eslint": "^8.14.0",
+    "mocha": "^9.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geronimus/jstext.git"
+  },
+  "bugs": {
+    "url": "https://github.com/geronimus/jstext/issues"
+  },
+  "homepage": "https://github.com/geronimus/jstext#readme"
+}
