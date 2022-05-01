@@ -60,6 +60,32 @@ A Set containing all spacing characters.
 
 ---
 
+## firstOccurrence( substrings, text )
+
+Returns the index of the first occurrence of one of the substrings within the text.
+
+The returned index is that of the logical character, and not of the byte. So be careful with strings containing multi-byte characters.
+
+### Parameters
+
+`substrings` _string | Array[ string ]_
+
+You can pass a single string, or an array of strings. These are the values that we are looking for in the text.
+
+`text` _string_
+
+The text to search for an occurrence of one of the substrings.
+
+### Return value
+
+If the substring is not found within the text - or if the text or all of the substrings are the empty string - then the return value is: `-1`;
+
+Otherwise, the return value is the index of the character within the text.
+
+However, note that if the text contains any multi-byte characters, the returned value is the index of the logical character, and not of the byte - which is what you would get from `String.prototype.indexOf()`.
+
+---
+
 ## head( text )
 
 A function to help you safely iterate over a text value as a sequence of characters.
