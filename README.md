@@ -22,8 +22,6 @@ const { member_name } = require( "@geronimus/text" );
 
 Contains collections of constants describing various classifications of special characters.
 
----
-
 ### Contants
 
 `Character.Control` _object_
