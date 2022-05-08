@@ -5,18 +5,18 @@ Contains utility functions for working with text values.
 # Usage
 
 ```javascript
-import { module_name } from "@geronimus/text";
+import { member_name } from "@geronimus/text";
 ```
 
 _or_
 
 ```javascript
-const { module_name } = require( "@geronimus/text" );
+const { member_name } = require( "@geronimus/text" );
 ```
 
 ---
 
-# Modules
+# Module Members
 
 ## Character
 
@@ -24,37 +24,29 @@ Contains collections of constants describing various classifications of special 
 
 ---
 
-### Character.Control
+### Contants
+
+`Character.Control` _object_
 
 An object containing constants for each non-printable contol character.
 
----
-
-### Character.ControlSet
+`Character.ControlSet` _Set[ string ]_
 
 A Set containing all non-printable control characters.
 
----
-
-### Character.LineEnd
+`Character.LineEnd` _object_
 
 An object containing constants for each line-terminating character.
 
----
-
-### Character.LineEndSet
+`Character.LineEndSet` _Set[ string ]_
 
 A Set containing all non-printable control characters.
 
----
-
-### Character.Space
+`Character.Space` _object_
 
 An object containing constants for each spacing character.
 
----
-
-### Character.SpaceSet
+`Character.SpaceSet` _Set[ string ]_
 
 A Set containing all spacing characters.
 
@@ -62,9 +54,9 @@ A Set containing all spacing characters.
 
 ## escape( chars, inText, escapeChar )
 
-Returns the `inText` argument with every character in the `chars` argument escaped.
+Returns the `inText` argument, with every character in the `chars` argument escaped.
 
-By default, this function uses JavaScript's escape character, the backslash (\). However, you can provide another character value to the `escapeChar` parameter to use that character instead.
+By default, this function uses JavaScript's escape character, the backslash (\\). However, you can provide another character value to the `escapeChar` parameter to use that character instead.
 
 The original use case for this function was printing text representations of values that may need to contain string literals, where internal double-quotes (") or other characters may need to be escaped.
 
@@ -76,11 +68,11 @@ The characters to escape. You can pass a single-character string, or an array of
 
 `inText` _string_
 
-The text in which to escape the characters listed in the `chars` argument.
+The text containing the characters to be escaped.
 
 `escapeChar` _string (Optional)_
 
-If you don't provide this argument, the default value of the backslash (\) will be used. Otherwise, you can provide an alternate value to be used as an escape character.
+If you don't provide this argument, the default value of the backslash (\\) will be used. Otherwise, you can provide an alternate value to be used as an escape character.
 
 ---
 
