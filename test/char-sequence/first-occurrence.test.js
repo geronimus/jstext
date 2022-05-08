@@ -61,8 +61,8 @@ describe( "firstOccurence( substrings, text )", () => {
       assert.strictEqual( firstOccurrence( "mua", "Oumuamua" ), 2 );
       assert.strictEqual( firstOccurrence( "🚓", "🚕🚓🚒" ), 1 );
 
-      const lineEnds = [ "\n", "\r\n" ];
-      assert.strictEqual( firstOccurrence( lineEnds, "\r" ), -1 );
+      const lineEnds = [ "\n", "\r\n", "\r", "\u2028", "\u2029" ];
+      assert.strictEqual( firstOccurrence( lineEnds, "\r" ), 0 );
       assert.strictEqual( firstOccurrence( lineEnds, "unix-\ny" ), 5 );
       assert.strictEqual( firstOccurrence( lineEnds, "ting!\r\n" ), 5 );
     }

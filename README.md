@@ -60,6 +60,30 @@ A Set containing all spacing characters.
 
 ---
 
+## escape( chars, inText, escapeChar )
+
+Returns the `inText` argument with every character in the `chars` argument escaped.
+
+By default, this function uses JavaScript's escape character, the backslash (\). However, you can provide another character value to the `escapeChar` parameter to use that character instead.
+
+The original use case for this function was printing text representations of values that may need to contain string literals, where internal double-quotes (") or other characters may need to be escaped.
+
+### Parameters
+
+`chars` _string | Array[ string ]_
+
+The characters to escape. You can pass a single-character string, or an array of single-character strings.
+
+`inText` _string_
+
+The text in which to escape the characters listed in the `chars` argument.
+
+`escapeChar` _string (Optional)_
+
+If you don't provide this argument, the default value of the backslash (\) will be used. Otherwise, you can provide an alternate value to be used as an escape character.
+
+---
+
 ## firstOccurrence( substrings, text )
 
 Returns the index of the first occurrence of one of the substrings within the text.
